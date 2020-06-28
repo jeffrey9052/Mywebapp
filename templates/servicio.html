@@ -1,0 +1,75 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <div class="jumbotron jumbotron-fluid" id="1">
+        <div class="container">
+            <h1 class="display-3">Diseño de Paginas Web</h1>
+            <p class="lead">Jumbo helper text</p>
+            <p>More info</p>
+            <a class="btn btn-primary btn-lg" href="{{ url_for ('servicio') }}" role="button">Jumbo action name</a>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-4 my-2">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Diseño de Paginas Web</h5>
+                    <p class="card-text">Paginas adaptables a cualquier pantalla y dispositivo</p>
+                    <a href="{{ url_for ('websites') }}" class="btn btn-primary">Leer</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 my-2">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Redes</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="{{ url_for ('redes') }}" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 my-2">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">CCTV</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="{{ url_for ('cctv') }}" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 my-2">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Mantenimiento de equipos</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="{{ url_for ('mantenimiento') }}" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 my-2">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 my-2">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+{% endblock %}

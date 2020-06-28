@@ -1,0 +1,47 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeffrey G.</title>
+    <!-- Boostrap 4-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='lib/bootstrap-4.4.1-dist/css/bootstrap.min.css') }}">
+    <!-- Custom-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="{{ url_for ('home') }}">Jeffrey Gonzalez</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="{{ url_for ('servicio') }}">Servicios</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="{{ url_for ('about') }}">Acerca</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="{{ url_for ('contacto') }}">Contacto</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container-fluid p-4 mt-5">
+    {% block content %}
+    {% endblock %}
+</div>
+
+<!-- Scripts-->
+<script src="{{ url_for('static', filename='lib/bootstrap-4.4.1-dist/js/jquery-3.4.1.slim.min.js') }}"></script>
+<script src="{{ url_for('static', filename='lib/bootstrap-4.4.1-dist/js/popper.min.js') }}"></script>
+<script src="{{ url_for('static', filename='lib/bootstrap-4.4.1-dist/js/bootstrap.min.js') }}"></script>
+</body>
+
+</html>
