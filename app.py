@@ -33,6 +33,11 @@ def mantenimiento():
     return render_template('mantenimiento.html')
 
 
+@app.route('/Servicios/Productos')
+def productos():
+    return render_template('mantenimiento.html')
+
+
 @app.route('/Acerca')
 def about():
     return render_template('acerca.html')
