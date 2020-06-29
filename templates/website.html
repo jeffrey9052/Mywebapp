@@ -1,5 +1,14 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<h1>Diseño de paginas Web Responsive</h1>
-{% endblock%}
+    <div class="jumbotron jumbotron-fluid" id="1">
+        <div class="container">
+            <h1 class="display-3">Diseño de Paginas Web</h1>
+            <p class="lead">Jumbo helper text</p>
+            <p>More info</p>
+            <a class="btn btn-primary btn-lg" href="{{ url_for ('websites') }}" role="button">Recargar la pagina</a>
+
+        </div>
+    </div>
+
+{% endblock %}
